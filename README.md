@@ -12,35 +12,35 @@ This project includes the implementation of five API endpoints as part of the Ne
 
    ![Register API](https://drive.google.com/file/d/1aQO65F4076n0JP66EpsBg8kQ0XKfO6GP/view?usp=sharing)
 
-2. **Endpoint 2**
+2. **Login API**
 
-   Endpoint: [Endpoint 2 API link]
+   Endpoint: http://127.0.0.1:8000/api/login/
    
-   Description: Provide a brief description of the functionality of this API endpoint.
+   Description: Returns the success message and token , if the login credentials are valid else throws respective error
 
-   ![Endpoint 2 API](https://drive.google.com/your-image-link)
+   ![Endpoint 2 API](https://drive.google.com/file/d/1Uj0VGihp2H-jEfXGqvyLVMlunuHNuuDi/view?usp=sharing)
 
-3. **Endpoint 3**
+3. **Online Users API**
 
-   Endpoint: [Endpoint 3 API link]
+   Endpoint: http://127.0.0.1:8000/api/online-users
    
-   Description: Provide a brief description of the functionality of this API endpoint.
+   Description: Provides a list of online users in the website.
 
-   ![Endpoint 3 API](https://drive.google.com/your-image-link)
+   ![Endpoint 3 API](https://drive.google.com/file/d/1w0aDFMxB0zONn22FxCChS5ieJHp5kmBu/view?usp=sharing)
 
-4. **Endpoint 4**
+4. **Initiate chat API**
 
-   Endpoint: [Endpoint 4 API link]
+   Endpoint: http://127.0.0.1:8000/api/chat/start/<int id of user you want to connect>/
    
-   Description: Provide a brief description of the functionality of this API endpoint.
+   Description: if you add the id (Primary Key/Int) of user you want to connect , it will check if the use if online and available and return a success message
 
-   ![Endpoint 4 API](https://drive.google.com/your-image-link)
+   ![Endpoint 4 API](https://drive.google.com/file/d/1q6XTkRKOADwtGMauMo9uJGL8QBSA3K5S/view?usp=sharing)
 
-5. **Endpoint 5**
+5. **Suggest Friends API**
 
-   Endpoint: [Endpoint 5 API link]
+   Endpoint: http://127.0.0.1:8000/api/suggested-friends/<int id of user from 1 to 1000>
    
-   Description: Provide a brief description of the functionality of this API endpoint.
+   Description: Suggest friends to the user from the list of 1000 user provided in teh assignment and give them a reccomandtaion of top 5 friends.
 
    ![Endpoint 5 API](https://drive.google.com/your-image-link)
 
