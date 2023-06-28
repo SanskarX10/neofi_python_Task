@@ -10,7 +10,7 @@ This project includes the implementation of five API endpoints as part of the Ne
    
    This API allows users to register and create an account. Upon successful registration, users will be provided with an authentication token.
 
-   ![Register API](https://drive.google.com/file/d/1aQO65F4076n0JP66EpsBg8kQ0XKfO6GP)
+   ![Register API](https://drive.google.com/uc?export=view&id=1aQO65F4076n0JP66EpsBg8kQ0XKfO6GP)
 
 2. **Login API**
 
