@@ -18,7 +18,7 @@ This project includes the implementation of five API endpoints as part of the Ne
    
    Description: Returns the success message and token , if the login credentials are valid else throws respective error
 
-   ![Endpoint 2 API](https://drive.google.com/file/d/1Uj0VGihp2H-jEfXGqvyLVMlunuHNuuDi/view?usp=sharing)
+   ![Endpoint 2 API](https://drive.google.com/uc?export=view&id=1Uj0VGihp2H-jEfXGqvyLVMlunuHNuuDi)
 
 3. **Online Users API**
 
@@ -26,7 +26,7 @@ This project includes the implementation of five API endpoints as part of the Ne
    
    Description: Provides a list of online users in the website.
 
-   ![Endpoint 3 API](https://drive.google.com/file/d/1w0aDFMxB0zONn22FxCChS5ieJHp5kmBu/view?usp=sharing)
+   ![Endpoint 3 API](https://drive.google.com/uc?export=view&id=1w0aDFMxB0zONn22FxCChS5ieJHp5kmBu)
 
 4. **Initiate chat API**
 
@@ -34,26 +34,25 @@ This project includes the implementation of five API endpoints as part of the Ne
    
    Description: if you add the id (Primary Key/Int) of user you want to connect , it will check if the use if online and available and return a success message
 
-   ![Endpoint 4 API](https://drive.google.com/file/d/1q6XTkRKOADwtGMauMo9uJGL8QBSA3K5S/view?usp=sharing)
+   ![Endpoint 4 API](https://drive.google.com/uc?export=view&id=1q6XTkRKOADwtGMauMo9uJGL8QBSA3K5S)
 
 5. **Suggest Friends API**
 
    Endpoint: http://127.0.0.1:8000/api/suggested-friends/<int id of user from 1 to 1000>
    
-   Description: Suggest friends to the user from the list of 1000 user provided in teh assignment and give them a reccomandtaion of top 5 friends.
+   Description: Suggest friends to the user from the list of 1000 user provided in teh assignment and reccomands them five friends suggested by algorithm based on their interests
+   #### Reccomendation algo:
+      ### User Data
+      The algorithm reads user data from a JSON file containing user information and their interests.
+      
+      ### Similarity Calculation
+      The algorithm calculates the similarity score between the interests of the specified user and all other users. It finds common interests between two users and computes the similarity score as the sum of the minimum value between their interests for each common interest.
+      
+      ### Recommendation Generation
+      The similarity scores are sorted in descending order to determine the most similar users. The top 5 recommended friends (excluding the user themselves) are selected from the sorted list.
+      
+      ### Response Format
+      The API returns a JSON response containing the details (id, name, age, and interests) of the recommended friends. If the user with the specified `user_id` is not found, a JSON response with a "User not found" error message is returned with a status code of 404.
 
-   ![Endpoint 5 API](https://drive.google.com/your-image-link)
-
-## Setting up Google Drive for Image Storage
-
-To access the images associated with the API endpoints, the images are stored in Google Drive. Follow the steps below to set up Google Drive for image storage:
-
-1. Sign in to your Google account or create a new one if you don't have an account already.
-2. Go to [Google Drive](https://drive.google.com) and create a new folder for storing the images.
-3. Upload the images to the created folder.
-4. Get the image link by right-clicking on the image file and selecting "Get link" or "Share."
-5. Replace the respective image links in the API descriptions above with the actual image links from your Google Drive.
-
-By following these steps, you will be able to access and display the associated images for each API endpoint.
-
-Feel free to explore the code and modify it as needed. If you have any questions or need further assistance, please reach out to the Neofis development team.
+   ![Endpoint 5 API](https://drive.google.com/uc?export=view&id=16xnit6w0CT-EyNpnQ4SmjTidaWsyTpYo)
+g
