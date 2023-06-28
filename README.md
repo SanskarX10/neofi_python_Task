@@ -1,5 +1,18 @@
 # Neofis Python Developer Task
 
+### How to set up
+1) clone the repository
+2) go into the cd chatapp_test
+3) setup your database settings in settings.py
+4) run the redis-server.exe from redis-windows-master
+5) change the link of the json file for users according to your location in suggest_view.py (which is in register_api) in below line
+6) with open(r'<path_to_users.json>', 'r', encoding='utf-8') as file:
+7) run "python manage.py makemigrations"
+8) run "python manage.py migrate"
+9) run "python manage.py runserver"
+
+
+
 This project includes the implementation of five API endpoints as part of the Neofis Python Developer task. The APIs serve various functionalities and are described below.
 
 ## API Endpoints
